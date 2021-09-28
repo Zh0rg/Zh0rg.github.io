@@ -2,7 +2,7 @@ article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0 1.5em 10%;
+    margin: 10px 0 1.5em 10%;
     width: 90%;
 }
 
@@ -13,4 +13,46 @@ article img {
 
 article img + p {
     width: 65%;
+}
+
+main section:last-child article div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+main section:last-child article div div {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:last-child article div div p:first-child {
+    font-size: 32pt;
+    margin-bottom: 5px;
+}
+
+main section:last-child article div  div p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    width: 80%;
+}
+
+@media (max-width: 1400px) {
+    article {
+        flex-direction: column;
+    }
+
+    article img {
+        margin: auto;
+        width: 80%;
+    }
+
+    article img + p {
+        width: 100%;
+    }
+
+    main section:last-child article div {
+        display: block;
+    }
 }
