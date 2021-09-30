@@ -7,7 +7,7 @@ self.addEventListener("install", event => {
             '/index.html',
             '/style.css',
             '/index.css',
-            '/news.php',
+            '/news.html',
             '/assets/logo.webp',
             '/assets/OIP.png',
             '/assets/2.jpg',
